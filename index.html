@@ -7,7 +7,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
+<!-- font awesome     -->
+<script src="https://kit.fontawesome.com/8001d4b3ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="m-5">
@@ -120,13 +121,12 @@
 </section>
 
 <!-- Popular Courses sart -->
-
-<section class="mt-5 ">
-  <div class="row row-cols-2 cols-md-1">
+<section class="mt-5">
+  <div class="container-fluid col-md-12 col-sm-6">
       <div class="card mb-3 ">
           <div class="row g-0">
               <div class="col-md-4">
-                  <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                  <img src="images/course/course-1.png" class="img-fluid rounded-start " alt="...">
               </div>
               <div class="col-md-8">
                   <div class="card-body">
@@ -142,7 +142,7 @@
       <div class="card mb-3 gx-0">
           <div class="row g-0">
               <div class="col-md-4">
-                  <img class="img-fluid" src="images/course/course-2.png"  alt="...">
+                  <img class="img-fluid rounded-start" src="images/course/course-2.png"  alt="...">
               </div>
               <div class="col-md-8 ">
                   <div class="card-body">
@@ -220,10 +220,10 @@
           </div>
       </div>
   </div>
-</section> 
+</section>  
 <!-- Courses end -->
 
-   <!--  For Bonus mark section start-->  
+   <!-- section modal start(For Bonus mark )-->   
 
 <section class="mt-5">
   <div class="row bg-info rounded ">
@@ -232,14 +232,37 @@
       <p class="text-light ps-5 ">It is a long established fact that a reader will be distracted by the <br> 
         readable content of a page when looking at its layout
       </p>
-      <div class="text-end align-items-center">
-      <button class="btn btn-outline-info p-2 me-auto fw-semibold bg-light" data-toggle="modal" data-bs-target="#my Modal">Register Now</button>
-      </div>  
+      
+<!-- Modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn bg-light text-info ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Register Now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Be always up to date</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Do you want to receive a push notification about the newest posts?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+        <button type="button" class="btn btn-primary">YES</button>
+      </div>
     </div>
+  </div>
+</div>
+
+  </div>
   </div>
 </section>
 
- <!-- <section class="Accordion"> -->
+<!-- section accordion -->
 <section>
   <div class="text-center mt-5 ps-5">
    <h2 class="pb-2">
@@ -286,23 +309,27 @@
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           Bootstrap. ...
-            Tailwind CSS. ...
-            Foundation. ...
-            Bulma. ...
-            Skeleton. 
+          Tailwind CSS. ...
+          Foundation. ...
+          Bulma. ...
+          Skeleton. 
         </div>
       </div>
     </div>
   </div>
 </div>
  </section>
- <!-- companies logo section -->
+<!-- section accordion end-->
+
+
+ <!-- companies logo section  -->
+
 <section>
   <div class="mb-5 pt-5  text-center">
     <h1>Trusted by over 800+ companies</h1>
   </div>
-  
-  <div class="container ">
+
+  <div class="container">
     <div class="row">
       <div class="col-2">
         <img class="img-fluid" src="images/company/company-1.png" alt="">
@@ -326,28 +353,32 @@
   </div>
   </div>
 </section>
- 
+ <!-- companies logo section  end-->
 </main>
+
 <!--<footer> start-->
-  <div class="card text-center bg-info">
-    <div class="card-body  p-5">
-      <h2 class="card-title ">Pro Edu</h2>
-      <p class="card-text">Office 41, Zawaya Buildin, Ghala    Muscat, <br> 
+
+  <div class="card text-center bg-dark p-5">
+    <div class="card-body">
+      <h3 class="card-title text-light ">Pro Edu</h3>
+      <p class="card-text text-light">Office 41, Zawaya Buildin, Ghala    Muscat, <br> 
       Sultanate of Oman <br>
       Privacy Ploicy | Terms of use.</p>
       
-        <div class="container text-center">
-          <a class="navbar-brand" href="#">
-            <img src="facebook-brands.svg" alt="" width="30" height="24">
-            <img src="instagram-brands.svg" alt="" width="30" height="24">
-          </a><img src="square-twitter-brands.svg" alt="" width="30" height="24">
-        </div>
+  <div class="container social">
+        <div>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>  
+
+          <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
       
+          <a href="https://bd.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>  
+        </div>
     </div>
-    <div>
+  </div>
 <!-- footer  end-->
 
-<!-- script -->
+<!-- cdn script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- cdn script end -->
 </body>
 </html>
